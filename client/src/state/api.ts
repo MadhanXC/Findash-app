@@ -5,7 +5,7 @@ import {
   GetTransactionsResponse,
 } from "./types";
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://findash-app-backend.vercel.app/" }),
   reducerPath: "main",
   tagTypes: ["Kpis", "Products", "Transactions"],
   endpoints: (build) => ({
