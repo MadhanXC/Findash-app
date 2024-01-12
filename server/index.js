@@ -13,6 +13,7 @@ import transactionRoutes from "./routes/transaction.js";
 import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
 
+// Test
 // Configurations
 dotenv.config();
 const app = express();
