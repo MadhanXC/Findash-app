@@ -1,8 +1,8 @@
 import mongoose from "mongoose"
-import {loadType} from "mongoose-currency"
+// import {loadType} from "mongoose-currency"
 
 const Schema = mongoose.Schema;
-loadType(mongoose)
+// loadType(mongoose)
 
 
 
@@ -14,12 +14,12 @@ const TransactionSchema = new Schema(
         required: true,
     },
     amount:{
-        type: mongoose.Types.Currency,
+        type: Number,
         curency: "USD",
         get: (v)=> v/100
     },
     productIds: [{
-        type: mongoose.Types.ObjectId,
+        type: Number,
        ref: "Product",
         
     }],

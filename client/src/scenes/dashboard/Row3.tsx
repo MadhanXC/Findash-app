@@ -78,12 +78,12 @@ const Row3 = () => {
       flex: 0.35,
       renderCell: (params: GridCellParams) => `$${params.value}`,
     },
-    {
-      field: "productIds",
-      headerName: "Count",
-      flex: 0.35,
-      renderCell: (params: GridCellParams) => (params.value as Array<string>).length,
-    },
+    // {
+    //   field: "productIds",
+    //   headerName: "Count",
+    //   flex: 0.35,
+    //   renderCell: (params: GridCellParams) => (params.value as Array<string>).length  ,
+    // },
   ];
 
   return (
